@@ -1,0 +1,41 @@
+{
+  "name": "koa-app",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/server.js",
+  "dependencies": {
+    "@koa/cors": "2",
+    "bcrypt": "latest",
+    "jsonwebtoken": "latest",
+    "koa": "latest",
+    "koa-body": "latest",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "latest",
+    "koa-router": "latest",
+    "moment": "^2.21.0",
+    "node-json-db": "^0.7.5"
+  },
+  "devDependencies": {
+    "chai": "latest",
+    "chokidar-cli": "latest",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "growl": "latest",
+    "mocha": "latest",
+    "nodemon": "latest",
+    "should": "latest",
+    "supertest": "latest"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node --harmony src/server.js",
+    "dev": "NODE_ENV=development node --inspect --harmony src/server.js",
+    "local": "DEBUG=* NODE_ENV=local nodemon --inspect --harmony src/server.js",
+    "test": "NODE_ENV=test mocha --reporter='min' --growl --harmony ./src/**/*.spec.js;",
+    "test-watch": "chokidar --initial './src/**/*.js' -c 'yarn test'",
+    "lint": "eslint -c .eslintrc.json .",
+    "test-mocha-watch": "NODE_ENV=test mocha --watch --harmony ./src/**/*.spec.js"
+  }
+}

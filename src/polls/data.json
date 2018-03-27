@@ -1,0 +1,54 @@
+{
+  "polls": {
+    "1": [
+      {
+        "id": 1,
+        "text": "Tabs"
+      },
+      {
+        "id": 2,
+        "text": "Spaces"
+      }
+    ],
+    "2": [
+      {
+        "id": 3,
+        "text": "C#"
+      },
+      {
+        "id": 4,
+        "text": "Java"
+      }
+    ],
+    "3": [
+      {
+        "id": 5,
+        "text": "Compilado"
+      },
+      {
+        "id": 6,
+        "text": "Interpretado"
+      }
+    ],
+    "4": [
+      {
+        "id": 7,
+        "text": "AngularJS"
+      },
+      {
+        "id": 8,
+        "text": "React"
+      }
+    ],
+    "5": [
+      {
+        "id": 9,
+        "text": "Atom"
+      },
+      {
+        "id": 10,
+        "text": "Sublime"
+      }
+    ]
+  }
+}
