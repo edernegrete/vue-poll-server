@@ -13,7 +13,6 @@ const JsonDB = require('node-json-db');
 const db = new JsonDB('pollDB', true, false);
 
 const jsonData = require('./polls/data.json');
-
 let polls = jsonData.polls;
 const lastKey = Object.keys(polls).length;
 const lastPollParse = polls[lastKey].map((item, index) => {
